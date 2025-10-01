@@ -228,46 +228,9 @@ The application includes robust error handling:
 - **Missing API Key**: Clear error message with setup instructions
 - **Agent Parsing Errors**: Automatic handling with graceful degradation
 
-## 🧩 Challenges and Solutions
 
-During the development process, I encountered several challenges that required creative solutions:
 
-### 1. Source Attribution
 
-**Challenge**: The LLM responses didn't consistently include source links or citations.
-
-**Solution**: I created a custom source extraction function that:
-- Uses regex to identify URLs in responses
-- Categorizes sources based on domain (arxiv.org, wikipedia.org, etc.)
-- Adds additional source indicators based on content keywords
-- Presents sources in a visually distinct and organized manner
-
-### 2. Response Streaming
-
-**Challenge**: Displaying the AI's thought process in real-time while maintaining a clean UI.
-
-**Solution**:
-- Implemented StreamlitCallbackHandler to show intermediate thoughts
-- Used placeholder containers to update content dynamically
-- Applied custom styling to distinguish between thinking process and final answers
-
-### 3. Error Resilience 
-
-**Challenge**: External APIs occasionally fail or timeout, causing the entire application to crash.
-
-**Solution**:
-- Implemented multi-level fallback mechanisms
-- Created try/except blocks to catch API errors
-- Added fallback to direct LLM responses when search tools fail
-- Designed user-friendly error messages that explain the situation
-
-## 🔮 Future Enhancements
-
-- Integration with additional specialized search tools
-- User authentication and saved search history
-- PDF uploading and analysis capabilities
-- Voice input and output
-- Mobile-responsive design optimizations
 
 ## 📄 License
 
