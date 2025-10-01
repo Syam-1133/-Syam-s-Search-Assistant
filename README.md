@@ -40,8 +40,7 @@ Syam's Search Assistant is a Streamlit-powered web application that leverages th
 
 1. Clone the repository
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone <https://github.com/Syam-1133/Syam-Search-Assistant>
    ```
 
 2. Install dependencies
